@@ -15,3 +15,7 @@ jobs:
       target-repo: "mdn/browser-compat-data"
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+name: PR Needs Rebase
+permissions:
+  contents: read
+  pull-requests: write # To add labels and comment on PRs
